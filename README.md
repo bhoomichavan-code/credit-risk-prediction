@@ -110,21 +110,52 @@ credit-risk-prediction/
 
 ## Results
 
-_Coming soon._
+Across **36,457 analyzable clients**, the overall "bad" rate (ever 60+ days past
+due) is **1.69%** — a heavily imbalanced problem (~58:1). The work produced:
+
+- An **engineered, documented target** (bad = ever 60+ DPD), validated against a
+  24-month vintage window that agrees with the simple label on 99.9% of clients.
+- **Segment and behavioral insight** into who defaults and when (notebooks 03–04).
+- An **interpretable logistic model** (notebook 05) reporting honest metrics —
+  **ROC-AUC 0.564**, **PR-AUC 0.062 (3.7× the prevalence baseline)** — and a
+  ranked, signed list of adjusted risk drivers.
+- Two **dashboard-ready extracts** and a one-page
+  [findings summary](docs/findings_summary.md).
+
+A deliberate, stated limitation: applicant attributes carry only modest predictive
+power, because the strongest real-world predictors (credit utilization, prior
+delinquency, debt-to-income) are not in the application data. The project's value
+is in rigorous methodology and *explaining* risk, not in a headline accuracy score.
 
 ## Key Findings
 
-_Coming soon._
+1. **Default is rare and imbalanced** (~1.69%), so the analysis relies on bad-rate
+   comparisons and rank/recall metrics rather than accuracy.
+2. **Risk varies most by life-stage and stability factors** — e.g. age-band bad
+   rate ranges from **1.42%** (35–44) to **2.54%** (65+), with employment length
+   and housing also separating risk.
+3. **Bad clients reveal themselves quickly** — median time to first serious
+   delinquency is **8 months**, and **~92%** of eventual defaults occur within 24
+   months of account opening (validating the performance window).
+4. **Early lateness is a strong early-warning signal** — clients who slip (30+ DPD)
+   in their first six months are about **11.7× more likely** to seriously default
+   later than clients with a clean start.
+5. **Applicant attributes have limited predictive power** — the model beats its
+   baseline only modestly; the behavioral signals above are far more informative
+   than static demographics.
+
+See [`docs/findings_summary.md`](docs/findings_summary.md) for the one-page
+write-up.
 
 ## Roadmap
 
-- [ ] 01 — Data acquisition & profiling
-- [ ] 02 — Target engineering
-- [ ] 03 — EDA: who defaults?
-- [ ] 04 — EDA: payment behavior over time
-- [ ] 05 — Cleaning & interpretable risk-factor model
-- [ ] 06 — Insights summary & dashboard
-- [ ] Tableau dashboard published
+- [x] 01 — Data acquisition & profiling
+- [x] 02 — Target engineering
+- [x] 03 — EDA: who defaults?
+- [x] 04 — EDA: payment behavior over time
+- [x] 05 — Cleaning & interpretable risk-factor model
+- [x] 06 — Insights summary & Tableau extracts
+- [ ] Tableau dashboard published _(build from `tableau/extracts/`, then add link above)_
 
 ---
 
