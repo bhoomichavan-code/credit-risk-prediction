@@ -1,0 +1,21 @@
+# ---- Core data handling ----
+pandas
+numpy
+
+# ---- Visualization ----
+matplotlib
+seaborn
+plotly
+
+# ---- Modeling (interpretable, supporting analysis) ----
+scikit-learn
+
+# ---- Notebook environment & I/O ----
+jupyter
+openpyxl
+
+# ---- Optional / advanced (only if you extend the modeling section) ----
+# xgboost
+# lightgbm
+# shap
+# imbalanced-learn
