@@ -95,3 +95,11 @@ Thumbs.db
 *.log
 .cache/
 tmp/
+
+# ---------------------------------------------------------------------------
+# Personal / instructional files — kept local, not published to the repo
+# ---------------------------------------------------------------------------
+docs/interview_prep.md
+docs/tableau_dashboard_guide.md
+setup_git.bat
+setup_git.sh
