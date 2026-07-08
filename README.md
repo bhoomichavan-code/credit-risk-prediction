@@ -106,7 +106,7 @@ credit-risk-prediction/
 
 ## Dashboard
 
-**Tableau Public:** _Coming soon._
+**Tableau Public:** (https://public.tableau.com/app/profile/bhoomi.chavan3703/viz/CreditRiskAnalysisDashboard_17826183313690/Dashboard1)
 
 ## Results
 
@@ -155,7 +155,7 @@ write-up.
 - [x] 04 — EDA: payment behavior over time
 - [x] 05 — Cleaning & interpretable risk-factor model
 - [x] 06 — Insights summary & Tableau extracts
-- [ ] Tableau dashboard published _(build from `tableau/extracts/`, then add link above)_
+- [x] Tableau dashboard published
 
 ---
 
