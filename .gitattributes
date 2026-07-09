@@ -1,0 +1,2 @@
+# Tell GitHub Linguist that the Jupyter scripts are supporting Python scripts
+*.search linguist-language=Python
